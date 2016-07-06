@@ -1,1 +1,13 @@
-//prioriTz.css
+#main{
+	padding: 2px 10px;
+	text-align: center;
+}
+ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+li {
+	display: inline;
+}
