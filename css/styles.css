@@ -12,6 +12,7 @@ li {
 	display: inline;
 }
 .calendarbutton{
+
     background-color:white
 ;
     color: black;
@@ -22,6 +23,7 @@ li {
     display: inline-block;
 }
 .calendarbutton:hover {background-color: white}
+
 .calendarbutton {
     background-color:#FFABA8;
 }
@@ -35,6 +37,7 @@ li {
     display: inline-block;
 }
 .listbutton:hover {background-color:white}
+
 .listbutton {
     background-color:#ECA8FF;
 }
@@ -48,6 +51,7 @@ li {
     display: inline-block;
 }
 .quadrantbutton:hover {background-color: white}
+
 .quadranbutton {
     background-color:#000000;
 
