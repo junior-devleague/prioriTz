@@ -8,7 +8,7 @@
     background-color: #B1CEED;
     border-spacing: 20px;
     color: black;
-    height:69.1px;
+    height:68px;
     padding: 20px; 
     font-size: 50px;
 }
@@ -76,9 +76,8 @@ li {
 .quadrantbutton:hover {background-color: #B3A69A}
 
 
-<<<<<<< HEAD
 .quadranbutton {
     background-color: #B09E88;
-=======
->>>>>>> f84126593edd9769a5c4f893ee3fd9fa0ec0549d
+
+
 
