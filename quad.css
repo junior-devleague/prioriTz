@@ -4,6 +4,7 @@
 	background-color: #B09E88;
 	border-radius: 15px;
 	height: 69.1px;
+<<<<<<< HEAD
 	border-radius: 15px;
 	font-family: "Papyrus" ;
 	border-spacing: 20px;
@@ -80,3 +81,7 @@ li {
     border-radius: 15px;
 }
 .questionsbutton:hover {background-color: #BAD2F4}
+=======
+	font-family: "Papyrus" ;
+}
+>>>>>>> 7779528ce0affca9ad0b976d1976b51103cef6e8

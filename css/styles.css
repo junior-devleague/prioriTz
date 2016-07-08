@@ -79,6 +79,7 @@ li {
 }
 .quadrantbutton:hover {background-color: #B3A69A}
 
+<<<<<<< HEAD
 .questionsbutton{
     background-color:#A8BBFF;
     color: black;
@@ -97,3 +98,26 @@ li {
     border-radius: 15px;
 }
 .questionsbutton:hover {background-color: #BAD2F4}
+=======
+
+.quadrantbutton {
+    background-color: #B09E88;
+
+
+}
+
+.addbutton {
+    border-radius: 50px;
+    margin-left: 1300px;
+    height: 50px;
+    width: 50px;
+    margin-top: 350px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+>>>>>>> 7779528ce0affca9ad0b976d1976b51103cef6e8

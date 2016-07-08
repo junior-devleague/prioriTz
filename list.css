@@ -3,6 +3,7 @@
 	text-align: center;
 	background-color: #ECA8FF;
 	border-radius: 15px;
+<<<<<<< HEAD
 	font-family: "Papyrus" ;
 	border-spacing: 20px;
     color: black;
@@ -79,3 +80,8 @@ li {
     border-radius: 15px;
 }
 .questionsbutton:hover {background-color: #BAD2F4}
+=======
+	height: 69.1px;
+	font-family: "Papyrus" ;
+}
+>>>>>>> 7779528ce0affca9ad0b976d1976b51103cef6e8
