@@ -40,6 +40,7 @@ li {
     top: 25px;
     bottom: -25px;
     border-radius: 15px;
+    width: 98px;
 
 }
 .calendarbutton:hover {background-color: #F4BAB0}
@@ -59,6 +60,7 @@ li {
     top: 25px;
     bottom: -25px;
     border-radius: 15px;
+    width: 98px;
 }
 .listbutton:hover {background-color:#E8C9F2}
 
@@ -78,6 +80,7 @@ li {
     top: 25px;
     bottom: -25px;
     border-radius: 15px;
+    width: 98px;
 }
 .questionsbutton:hover {background-color: #BAD2F4}
 
@@ -97,6 +100,7 @@ li {
     top: 25px;
     bottom: -25px;
     border-radius: 15px;
+    width: 98px;
 }
 .homebutton:hover {background-color: #BCD8D8}
 

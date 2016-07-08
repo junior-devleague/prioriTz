@@ -20,7 +20,7 @@ ul {
 }
 li{
     display: block;
-    width: 60px;
+    width: 20px;
 } 
 .listbutton{
     background-color:#ECA8FF;
@@ -32,6 +32,8 @@ li{
     display: inline-block;
     font-family: "Papyrus" ;
     border-radius: 15px;
+    width: 98px;
+
 }
 .listbutton:hover {background-color:#E8C9F2}
 
@@ -46,6 +48,7 @@ li{
     font-family: "Papyrus" ;
     font-size: 10px;
     border-radius: 15px;
+    width: 98px;
 }
 .quadrantbutton:hover {background-color: #B3A69A}
 
@@ -60,6 +63,7 @@ li{
     font-family: "Papyrus" ;
     font-size: 10px;
     border-radius: 15px;
+    width: 98px;
 }
 .questionsbutton:hover {background-color: #BAD2F4}
 
@@ -73,12 +77,20 @@ li{
     display: inline-block;
     font-family: "Papyrus" ;
     font-size: 10px;
-    margin:0 auto;
     position:relative;
     transition: .5s ease;
     top: 25px;
-    bottom: -25px;
     border-radius: 15px;
+    width: 98px;
 }
 .homebutton:hover {background-color: #BCD8D8}
+
+.addbutton {
+    border-radius: 50px;
+    margin-left: 1300px;
+    height: 50px;
+    width: 50px;
+    margin-top: 350px;
+    font-size: 20px;
+}
 
