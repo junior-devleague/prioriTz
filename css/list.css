@@ -3,7 +3,6 @@
 	text-align: center;
 	background-color: #ECA8FF;
 	border-radius: 15px;
-<<<<<<< HEAD
 	font-family: "Papyrus" ;
 	border-spacing: 20px;
     color: black;
@@ -78,10 +77,27 @@ li {
     top: 25px;
     bottom: -25px;
     border-radius: 15px;
+    width: 98px;
 }
 .questionsbutton:hover {background-color: #BAD2F4}
-=======
-	height: 69.1px;
-	font-family: "Papyrus" ;
+
+.homebutton{
+    background-color:#97D8D8;
+    color: black;
+    box-shadow: 0 5px #666;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Papyrus" ;
+    font-size: 10px;
+    margin:0 auto;
+    position:relative;
+    transition: .5s ease;
+    top: 25px;
+    bottom: -25px;
+    border-radius: 15px;
+    width: 98px;
 }
->>>>>>> 7779528ce0affca9ad0b976d1976b51103cef6e8
+.homebutton:hover {background-color: #BCD8D8}
+
