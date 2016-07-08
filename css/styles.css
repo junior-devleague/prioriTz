@@ -3,9 +3,10 @@
 	text-align: center;
     font-family: "Papyrus" ;
     font-size: 60px;
-    border-style: double; 
+    border-style: double;
+    border-radius: 15px;  
     border-color:white;
-    background-color: #B1CEED;
+    background-color: #97D8D8;
     border-spacing: 20px;
     color: black;
     height:68px;
@@ -36,6 +37,7 @@ li {
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
+    border-radius: 15px;
 
 }
 .calendarbutton:hover {background-color: #F4BAB0}
@@ -54,6 +56,7 @@ li {
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
+    border-radius: 15px;
 }
 .listbutton:hover {background-color:#E8C9F2}
 
@@ -72,12 +75,25 @@ li {
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
+    border-radius: 15px;
 }
 .quadrantbutton:hover {background-color: #B3A69A}
 
-
-.quadranbutton {
-    background-color: #B09E88;
-
-
-
+.questionsbutton{
+    background-color:#A8BBFF;
+    color: black;
+    box-shadow: 0 5px #666;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Papyrus" ;
+    font-size: 10px;
+    margin:0 auto;
+    position:relative;
+    transition: .5s ease;
+    top: 25px;
+    bottom: -25px;
+    border-radius: 15px;
+}
+.questionsbutton:hover {background-color: #BAD2F4}

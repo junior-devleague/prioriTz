@@ -4,4 +4,79 @@
 	background-color: #B09E88;
 	border-radius: 15px;
 	height: 69.1px;
+	border-radius: 15px;
+	font-family: "Papyrus" ;
+	border-spacing: 20px;
+    color: black;
+    height:68px;
+    padding: 20px; 
+    font-size: 50px;
+    border-style: double; 
+    border-color:white;
 }
+ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+li {
+    display: block;
+    width: 60px;
+}
+.calendarbutton{
+
+    background-color:#FFABA8;
+    color: black;
+    box-shadow: 0 5px #666;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-blk;
+    font-family: "Papyrus" ; 
+    margin:0 auto; 
+    position:relative;
+    transition: .5s ease;
+    top: 25px;
+    bottom: -25px;
+    border-radius: 15px;
+
+}
+.calendarbutton:hover {background-color: #F4BAB0}
+
+.listbutton{
+    background-color:#ECA8FF;
+    color: black;
+    box-shadow: 0 5px #666;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Papyrus" ;
+    margin:0 auto;
+    position:relative;
+    transition: .5s ease;
+    top: 25px;
+    bottom: -25px;
+    border-radius: 15px;
+}
+.listbutton:hover {background-color:#E8C9F2}
+
+.questionsbutton{
+    background-color:#A8BBFF;
+    color: black;
+    box-shadow: 0 5px #666;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Papyrus" ;
+    font-size: 10px;
+    margin:0 auto;
+    position:relative;
+    transition: .5s ease;
+    top: 25px;
+    bottom: -25px;
+    border-radius: 15px;
+}
+.questionsbutton:hover {background-color: #BAD2F4}
