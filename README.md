@@ -1,2 +1,2 @@
-# prioritz
+# prioriTz
 A better prioritization application 

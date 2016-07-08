@@ -128,5 +128,16 @@ li {
 }
 .questionsbutton:hover {background-color: #BAD2F4}
 
+.content_wrapper{
+margin:auto;
+text-align: center;
+color:black;
+position:relative;
+top: -200px;
 
+}
+.text{
+    font-size: 20px;
+    font-family: "Papyrus" ;
+}
 
