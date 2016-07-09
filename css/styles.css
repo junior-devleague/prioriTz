@@ -59,7 +59,7 @@ li {
 .listbutton:hover {background-color:#E8C9F2}
 
 .quadrantbutton{
-    background-color:#B09E88;
+    background-color:#A8BBFF;
     color: black;
     box-shadow: 0 5px #666;
     padding: 14px 25px;
@@ -74,7 +74,7 @@ li {
     bottom: -25px;
     border-radius: 15px;
 }
-.quadrantbutton:hover {background-color: #B3A69A}
+.quadrantbutton:hover {background-color:#BAD2F4}
 
 .addbutton {
     border-radius: 500px;
