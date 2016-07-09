@@ -33,7 +33,6 @@ li {
     display: inline-blk;
     font-family: "Papyrus" ; 
     margin:0 auto; 
-    position:relative;
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
@@ -52,7 +51,6 @@ li {
     display: inline-block;
     font-family: "Papyrus" ;
     margin:0 auto;
-    position:relative;
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
@@ -71,7 +69,6 @@ li {
     font-family: "Papyrus" ;
     font-size: 10px;
     margin:0 auto;
-    position:relative;
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
@@ -99,7 +96,6 @@ li {
     font-family: "Papyrus" ;
     font-size: 10px;
     margin:0 auto;
-    position:relative;
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
@@ -119,7 +115,6 @@ li {
     font-family: "Papyrus" ;
     font-size: 10px;
     margin:0 auto;
-    position:relative;
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
@@ -140,4 +135,10 @@ top: -200px;
     font-size: 20px;
     font-family: "Papyrus" ;
 }
+
+.button_links li{
+    display:inline-block;
+    text-align: center;
+}
+
 
