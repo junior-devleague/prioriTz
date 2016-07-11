@@ -55,6 +55,7 @@ li {
     top: 25px;
     bottom: -25px;
     border-radius: 15px;
+    width: 92px;
 }
 .listbutton:hover {background-color:#E8C9F2}
 
@@ -103,25 +104,6 @@ li {
     width: 98px;
 }
 .homebutton:hover {background-color: #BCD8D8}
-
-.questionsbutton{
-    background-color:#A8BBFF;
-    color: black;
-    box-shadow: 0 5px #666;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: "Papyrus" ;
-    font-size: 10px;
-    margin:0 auto;
-    transition: .5s ease;
-    top: 25px;
-    bottom: -25px;
-    border-radius: 15px;
-    width: 98px;
-}
-.questionsbutton:hover {background-color: #BAD2F4}
 
 .content_wrapper{
 margin:auto;

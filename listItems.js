@@ -19,5 +19,10 @@ function loadItems(data){
 		var location = data[i].location;
 		var name = data[i].name;
 		var urgency = data[i].urgency; 
+		document.getElementById('itemList').appendChild(container);
+
+		var container = document.createElement('div');
+		containerclassName
 	}
 }
+	
