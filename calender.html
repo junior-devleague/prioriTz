@@ -15,28 +15,18 @@
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.8.0/fullcalendar.min.css">
 </head>
 <body>
-	<div id="calendarmain">
-		Calendar
-	</div>
-	<ul class="button_links">
-		<li><a href="index.html"><button class="homebutton">Home</button></a></li>
-		<li><a href="list.html"><button class="listbutton">List</button></a></li>
-		<li><a href="calender.html"><button class="calendarbutton">Calendar</button></a></li>
-		<li><a href="quad.html"><button class="quadrantbutton">Quadrant</button></a></li>
-	</div>
-	<div id="input1">
-		<form action="list.html">
-		Tasks : <input type="text" name="tasks" value=""><br>
-		<input type="submit" value="Submit">
-		</form>
+	<div class="header" id="calendar_header">Calendar</div>
+	<ul class="nav_bar">
+		<li><a href="index.html" class="nav_button" id="home_button">Home</a></li>
+		<li><a href="list.html" class="nav_button" id="list_button">List</a></li>
+		<li><a href="calender.html" class="nav_button" id="calendar_button">Calendar</a></li>
+		<li><a href="quad.html" class="nav_button" id="quadrant_button">Quadrant</a></li>
+	</ul>
+	<div id="calendar">
+		
 	</div>
 
-	<div id="container">
-		<div id="calendar">
-			
-		</div>
-	</div>
-	<a href="questions.html"><button class="addbutton">+</button></a>
+	<a href="questions.html"><button id="add_button">+</button></a>
 </body>
 </html>
 
