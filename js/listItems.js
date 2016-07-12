@@ -10,7 +10,6 @@ window.onload = function(){
 };
 
 function loadItems(data){
-	console.log(data[0]);
 	for(var i = 0; i < data.length; i++){
 		var dateCreated = data[i].dateCreated;
 		var dateDue = data[i].dateDue;
@@ -18,12 +17,22 @@ function loadItems(data){
 		var isHardGoal = data[i].isHardGoal;
 		var location = data[i].location;
 		var name = data[i].name;
-		var urgency = data[i].urgency; 
+		var urgency = data[i].urgency;
+
+		console.log(location); 
 
 		var container = document.createElement('div');
 		container.className = "itemContainer";
-		container.innerHTML = "Test";
 		document.getElementById('itemList').appendChild(container);
+
+		var main = document.createElement('div');
+		main.className = "main";
+		container.appendChild(main);
+
+		var nameElement = document.createElement('span');
+		nameElement.className = "name";
+		nameElement.innerHTML = name;
+		main.appendChild(nameElement);
 	}
 }
 	
