@@ -33,6 +33,11 @@ function loadItems(data){
 		nameElement.className = "name";
 		nameElement.innerHTML = name;
 		main.appendChild(nameElement);
+
+		var dateDueElement = document.createElement('span');
+		dateDueElement.className = "Date due";
+		dateDueElement.innerHTML = date due;
+		main.appendChild(dateDueElement);
 	}
 }
 	
