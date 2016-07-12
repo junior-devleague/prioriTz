@@ -1,15 +1,15 @@
-#main{
+#main {
 	padding: 2px 10px;
 	text-align: center;
-    font-family: "Papyrus" ;
+    font-family: "Papyrus";
     font-size: 60px;
     border-style: double;
     border-radius: 15px;  
-    border-color:white;
+    border-color: white;
     background-color: #97D8D8;
     border-spacing: 20px;
     color: black;
-    height:68px;
+    height: 68px;
     padding: 20px; 
     font-size: 50px;
 }
@@ -22,60 +22,66 @@ ul {
 li {
 	display: inline;
 }
-.calendarbutton{
+.calendarbutton {
 
-    background-color:#FFABA8;
-    color: black;
-    box-shadow: 0 5px #666;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-blk;
-    font-family: "Papyrus" ; 
-    margin:0 auto; 
-    transition: .5s ease;
-    top: 25px;
-    bottom: -25px;
-    border-radius: 15px;
-
-}
-.calendarbutton:hover {background-color: #F4BAB0}
-
-.listbutton{
-    background-color:#ECA8FF;
+    background-color: #FFABA8;
     color: black;
     box-shadow: 0 5px #666;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: "Papyrus" ;
-    margin:0 auto;
+    font-family: "Papyrus"; 
+    margin: 0 auto; 
+    transition: .5s ease;
+    top: 25px;
+    bottom: -25px;
+    border-radius: 15px;
+
+}
+.calendarbutton:hover {
+    background-color: #F4BAB0
+}
+
+.listbutton {
+    background-color: #ECA8FF;
+    color: black;
+    box-shadow: 0 5px #666;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Papyrus";
+    margin: 0 auto;
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
     border-radius: 15px;
     width: 92px;
 }
-.listbutton:hover {background-color:#E8C9F2}
+.listbutton:hover {
+    background-color: #E8C9F2
+}
 
-.quadrantbutton{
-    background-color:#A8BBFF;
+.quadrantbutton {
+    background-color: #A8BBFF;
     color: black;
     box-shadow: 0 5px #666;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: "Papyrus" ;
+    font-family: "Papyrus";
     font-size: 10px;
-    margin:0 auto;
+    margin: 0 auto;
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
     border-radius: 15px;
 }
-.quadrantbutton:hover {background-color:#BAD2F4}
+.quadrantbutton:hover {
+    background-color:#BAD2F4
+}
 
 .addbutton {
     border-radius: 500px;
@@ -86,40 +92,41 @@ li {
     font-size: 20px;
 }
 
-.homebutton{
-    background-color:#97D8D8;
+.homebutton {
+    background-color: #97D8D8;
     color: black;
     box-shadow: 0 5px #666;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: "Papyrus" ;
+    font-family: "Papyrus";
     font-size: 10px;
-    margin:0 auto;
+    margin: 0 auto;
     transition: .5s ease;
     top: 25px;
     bottom: -25px;
     border-radius: 15px;
     width: 98px;
 }
-.homebutton:hover {background-color: #BCD8D8}
-
-.content_wrapper{
-margin:auto;
-text-align: center;
-color:black;
-position:relative;
-top: -200px;
-
+.homebutton:hover {
+    background-color: #BCD8D8
 }
-.text{
+
+.content_wrapper {
+    margin: auto;
+    text-align: center;
+    color: black;
+    position: relative;
+    top: -200px;
+}
+.text {
     font-size: 20px;
-    font-family: "Papyrus" ;
+    font-family: "Papyrus";
 }
 
-.button_links li{
-    display:inline-block;
+.button_links li {
+    display: inline-block;
     text-align: center;
 }
 
