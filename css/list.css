@@ -4,5 +4,15 @@
 
 .content {
 	display: none;
-	
+}
+
+.nameDate{
+	background-color: #ECA8FF;
+	border-radius: 15px;
+	height: 50px;
+	width: 600px;
+	margin: 10px;
+	text-align: center;
+	margin-left: 385px;
+
 }

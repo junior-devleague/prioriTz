@@ -30,15 +30,19 @@ function loadItems(data){
 		main.className = "main";
 		container.appendChild(main);
 
+		var nameDateElement = document.createElement('div');
+		nameDateElement.className= "nameDate";
+		main.appendChild(nameDateElement);
+
 		var nameElement = document.createElement('span');
 		nameElement.className = "name";
 		nameElement.innerHTML = name;
-		main.appendChild(nameElement);
+		nameDateElement.appendChild(nameElement);
 
 		var dateDueElement = document.createElement('span');
 		dateDueElement.className = "dateDue";
 		dateDueElement.innerHTML = dateDue;
-		main.appendChild(dateDueElement);
+		nameDateElement.appendChild(dateDueElement);
 
 		//create the content element and it's children
 
