@@ -4,6 +4,12 @@
 
 .content {
 	display: none;
+	text-align: center;
+	background-color: #ECA8FF;
+	height: 80px;
+	width: 600px;
+	margin-left: 385px;
+
 }
 
 .nameDate{
@@ -16,3 +22,4 @@
 	margin-left: 385px;
 
 }
+

@@ -23,16 +23,16 @@ function loadItems(data){
 
 		var container = document.createElement('div');
 		container.className = "itemContainer";
+		container.addEventListener('click', toggleContent);
 		document.getElementById('itemList').appendChild(container);
 
 		var main = document.createElement('div');
-		main.addEventListener('click', toggleContent);
 		main.className = "main";
 		container.appendChild(main);
 
 		var nameDateElement = document.createElement('div');
 		nameDateElement.className= "nameDate";
-		main.appendChild(nameDateElement);
+		container.appendChild(nameDateElement);
 
 		var nameElement = document.createElement('span');
 		nameElement.className = "name";
@@ -87,7 +87,7 @@ function loadItems(data){
 }
 
 function toggleContent(evt){
-	$(evt.target).next().toggle();
+	$(evt.target).closest('.itemContainer').find('.content').toggle();
 }
 
 
