@@ -18,6 +18,54 @@
 		<li><a href="calender.html" class="nav_button" id="calendar_button">Calendar</a></li>
 		<li><a href="quad.html" class="nav_button" id="quadrant_button">Quadrant</a></li>
 	</ul>
+
+	<form>
+		<div>
+    	    <label for="name">Name:</label>
+    	    <input type="text" id="name" name="item_name" />
+    	</div>
+    	<div>
+    	    <label for="description">Description:</label>
+    	    <textarea id="description" name="item_description"></textarea>
+    	</div>
+    	<div>
+    	    <label for="location">Location:</label>
+    	    <input type="text" id="location" name="item_location" />
+    	</div>
+    	<div>
+    	    <label for="date_due">Date due:</label>
+    	    <input type="datetime-local" id="date_due" name="item_date_due"></textarea>
+    	</div>
+    	<div>
+    	    <label for="urgency">Urgency:</label>
+    		<select id="urgency" name="item_urgency">
+        		<option value="1">1</option>
+        		<option value="2">2</option>
+        		<option value="3">3</option>
+        		<option value="4">4</option>
+        		<option value="5">5</option>
+        	</select>
+    	</div>
+    	<div>
+    	    <label for="difficulty">Difficulty:</label>
+    		<select id="difficulty" name="item_difficulty">
+        		<option value="1">1</option>
+        		<option value="2">2</option>
+        		<option value="3">3</option>
+        		<option value="4">4</option>
+        		<option value="5">5</option>
+        	</select>
+    	</div>
+    	<div>
+    	    <label for="hard">Is this a hard goal?</label>
+    		<select id="hard" name="item_hard">
+        		<option value="true">true</option>
+        		<option value="false">false</option>
+        	</select>
+    	</div>
+
+    	<button id="submit_button">Add this new item</button>
+    </form>
 	
 </body>
 </html>
