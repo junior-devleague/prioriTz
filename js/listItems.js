@@ -19,13 +19,14 @@ function loadItems(data){
 		var name = data[i].name;
 		var urgency = data[i].urgency;
 
-		console.log(location); 
+		console.log(dateCreated, dateDue, description, isHardGoal, location, name, urgency); 
 
 		var container = document.createElement('div');
 		container.className = "itemContainer";
 		document.getElementById('itemList').appendChild(container);
 
 		var main = document.createElement('div');
+		main.addEventListener('click', toggleContent);
 		main.className = "main";
 		container.appendChild(main);
 
@@ -35,9 +36,59 @@ function loadItems(data){
 		main.appendChild(nameElement);
 
 		var dateDueElement = document.createElement('span');
-		dateDueElement.className = "Date due";
-		dateDueElement.innerHTML = date due;
+		dateDueElement.className = "dateDue";
+		dateDueElement.innerHTML = dateDue;
 		main.appendChild(dateDueElement);
+
+		//create the content element and it's children
+
+		var contentElement = document.createElement('div');
+		contentElement.className = "content";
+		container.appendChild(contentElement);
+
+		var firstRow = document.createElement('div');
+		firstRow.className = "firstRow";
+		contentElement.appendChild(firstRow);
+
+		var dateCreatedElement = document.createElement('span');
+		dateCreatedElement.className = "dateCreated";
+		dateCreatedElement.innerHTML = dateCreated;
+		firstRow.appendChild(dateCreatedElement);
+
+		var locationElement = document.createElement('span');
+		locationElement.className = "location";
+		locationElement.innerHTML = location;
+		firstRow.appendChild(locationElement);
+
+		var secondRow = document.createElement('div');
+		secondRow.className = "secondRow";
+		contentElement.appendChild(secondRow);
+
+		var isHardGoalElement = document.createElement('span');
+		isHardGoalElement.className = "isHardGoal";
+		isHardGoalElement.innerHTML = isHardGoal;
+		secondRow.appendChild(isHardGoalElement);
+
+		var urgencyElement = document.createElement('span');
+		urgencyElement.className = "urgency"
+		urgencyElement.innerHTML = urgency;
+		secondRow.appendChild(urgencyElement);
+
+		var descriptionElement = document.createElement('div');
+		descriptionElement.className = "description";
+		descriptionElement.innerHTML = description;
+		contentElement.appendChild(descriptionElement);
+
 	}
 }
-	
+
+function toggleContent(evt){
+	$(evt.target).next().toggle();
+}
+
+
+
+
+
+
+
