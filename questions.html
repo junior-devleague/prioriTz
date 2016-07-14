@@ -22,23 +22,23 @@
 	<form>
 		<div>
     	    <label for="name">Name:</label>
-    	    <input type="text" id="name" name="item_name" />
+    	    <input type="text" id="name" name="name" required />
     	</div>
     	<div>
     	    <label for="description">Description:</label>
-    	    <textarea id="description" name="item_description"></textarea>
+    	    <textarea id="description" name="description" required></textarea>
     	</div>
     	<div>
     	    <label for="location">Location:</label>
-    	    <input type="text" id="location" name="item_location" />
+    	    <input type="text" id="location" name="location" required />
     	</div>
     	<div>
-    	    <label for="date_due">Date due:</label>
-    	    <input type="datetime-local" id="date_due" name="item_date_due"></textarea>
+    	    <label for="dateDue">Date due:</label>
+    	    <input type="datetime-local" id="dateDue" name="dateDue" required></textarea>
     	</div>
     	<div>
     	    <label for="urgency">Urgency:</label>
-    		<select id="urgency" name="item_urgency">
+    		<select id="urgency" name="urgency" required>
         		<option value="1">1</option>
         		<option value="2">2</option>
         		<option value="3">3</option>
@@ -48,7 +48,7 @@
     	</div>
     	<div>
     	    <label for="difficulty">Difficulty:</label>
-    		<select id="difficulty" name="item_difficulty">
+    		<select id="difficulty" name="difficulty" required>
         		<option value="1">1</option>
         		<option value="2">2</option>
         		<option value="3">3</option>
@@ -57,14 +57,14 @@
         	</select>
     	</div>
     	<div>
-    	    <label for="hard">Is this a hard goal?</label>
-    		<select id="hard" name="item_hard">
+    	    <label for="isHardGoal">Is this a hard goal?</label>
+    		<select id="isHardGoal" name="isHardGoal" required>
         		<option value="true">true</option>
         		<option value="false">false</option>
         	</select>
     	</div>
 
-    	<button id="submit_button">Add this new item</button>
+    	<button id="submit_button" type="button">Add this new item</button>
     </form>
 	
 </body>
