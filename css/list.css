@@ -10,6 +10,10 @@
 	text-align: center;
 	border-radius: 15px;
 	position: relative;
+	 border-style: double;
+    border-radius: 15px;  
+    border-color: white;
+    border-spacing: 20px;
 }
 .name {
 	width: 45%;
@@ -19,6 +23,10 @@
 .dateDue {
 	width: 45%;
 	display: inline-block;
+	  border-style: double;
+    border-radius: 15px;  
+    border-color: white;
+    border-spacing: 20px;
 }
 
 .fa-chevron-circle-down {
@@ -33,6 +41,10 @@
 	padding:13px;
 	margin-top:5px;
 	margin-left: 5px;
+	border-style: double;
+    border-radius: 15px;  
+    border-color: white;
+    border-spacing: 20px;
 }
 
 .content {
