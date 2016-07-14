@@ -60,6 +60,10 @@ li {
 #home_button {
     background-color: #97D8D8;
     width:50px;
+    border-style: double;
+    border-radius: 15px;  
+    border-color: white;
+    border-spacing: 20px;
 }
 #home_button:hover {
     background-color: #BCD8D8
@@ -67,6 +71,10 @@ li {
 #calendar_button {
     background-color: #FFABA8;
     width:50px;
+    border-style: double;
+    border-radius: 15px;  
+    border-color: white;
+    border-spacing: 20px;
 }
 #calendar_button:hover {
     background-color: #F4BAB0
@@ -74,18 +82,14 @@ li {
 #list_button {
     background-color: #ECA8FF;
     width:50px;
+    border-style: double;
+    border-radius: 15px;  
+    border-color: white;
+    border-spacing: 20px;
 }
 #list_button:hover {
     background-color: #E8C9F2
 }
-#quadrant_button {
-    background-color: #A8BBFF;
-    width:50px;
-}
-#quadrant_button:hover {
-    background-color: #BAD2F4
-}
-
 .content_wrapper {
     margin: auto;
     text-align: center;
