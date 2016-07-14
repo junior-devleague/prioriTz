@@ -89,10 +89,10 @@ li {
 .content_wrapper {
     margin: auto;
     text-align: center;
-    color: black;
+    color: black; 
 }
 .text {
-    font-size: 20px;
+    font-size: 33px;
 }
 
 #add_button {
