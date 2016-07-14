@@ -9,6 +9,7 @@
 	box-sizing: content-box;
 	text-align: center;
 	border-radius: 15px;
+	position: relative;
 }
 .name {
 	width: 45%;
@@ -38,7 +39,12 @@
 	display: none;
 }
 
+.fa-times-circle {
+	position: absolute;
+	top: -3px;
+	right: -3px;
 
+}
 
 
 
