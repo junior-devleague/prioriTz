@@ -20,17 +20,53 @@
 		<li><a href="calender.html" class="nav_button" id="calendar_button">Calendar</a></li>
 		<li><a href="quad.html" class="nav_button" id="quadrant_button">Quadrant</a></li>
 	</ul>
-Is this a something you have to do (hard goal/soft goal)? <br> 
 
-<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
-A. yes (hard goal)<BR>
+	<form>
+		<div>
+    	    <label for="name">Name:</label>
+    	    <input type="text" id="name" name="name" required />
+    	</div>
+    	<div>
+    	    <label for="description">Description:</label>
+    	    <textarea id="description" name="description" required></textarea>
+    	</div>
+    	<div>
+    	    <label for="location">Location:</label>
+    	    <input type="text" id="location" name="location" required />
+    	</div>
+    	<div>
+    	    <label for="dateDue">Date due:</label>
+    	    <input type="datetime-local" id="dateDue" name="dateDue" required></textarea>
+    	</div>
+    	<div>
+    	    <label for="urgency">Urgency:</label>
+    		<select id="urgency" name="urgency" required>
+        		<option value="1">1</option>
+        		<option value="2">2</option>
+        		<option value="3">3</option>
+        		<option value="4">4</option>
+        		<option value="5">5</option>
+        	</select>
+    	</div>
+    	<div>
+    	    <label for="difficulty">Difficulty:</label>
+    		<select id="difficulty" name="difficulty" required>
+        		<option value="1">1</option>
+        		<option value="2">2</option>
+        		<option value="3">3</option>
+        		<option value="4">4</option>
+        		<option value="5">5</option>
+        	</select>
+    	</div>
+    	<div>
+    	    <label for="isHardGoal">Is this a hard goal?</label>
+    		<select id="isHardGoal" name="isHardGoal" required>
+        		<option value="true">true</option>
+        		<option value="false">false</option>
+        	</select>
+    	</div>
 
-<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
-B. no (soft goal) <BR>
-
-<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
-
-</FORM>
-
+    	<button id="submit_button" type="button">Add this new item</button>
+    </form>
 </body>
 </html>
