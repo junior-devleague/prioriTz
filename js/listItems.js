@@ -11,18 +11,21 @@ window.onload = function(){
 
 function loadItems(data){
 	for(var i = 0; i < data.length; i++){
-		var dateCreated = data[i].dateCreated;
 		var dateDue = data[i].dateDue;
 		var description = data[i].description;
 		var isHardGoal = data[i].isHardGoal;
 		var location = data[i].location;
 		var name = data[i].name;
 		var urgency = data[i].urgency;
-
-		console.log(dateCreated, dateDue, description, isHardGoal, location, name, urgency); 
+		var difficulty = data[i].difficulty;
 
 		var container = document.createElement('div');
-		container.className = "itemContainer";
+		// Have a different background color for hard goals
+		if (isHardGoal === true) {
+			container.className = "itemContainer hardGoal"
+		} else {
+			container.className = "itemContainer";
+		}
 		document.getElementById('itemList').appendChild(container);
 
 		var main = document.createElement('div');
@@ -62,38 +65,33 @@ function loadItems(data){
 		contentElement.className = "content";
 		container.appendChild(contentElement);
 
+		var descriptionElement = document.createElement('div');
+		descriptionElement.className = "description";
+		descriptionElement.innerHTML = description;
+		contentElement.appendChild(descriptionElement);
+
 		var firstRow = document.createElement('div');
 		firstRow.className = "firstRow";
 		contentElement.appendChild(firstRow);
 
-		var dateCreatedElement = document.createElement('span');
-		dateCreatedElement.className = "dateCreated";
-		dateCreatedElement.innerHTML = dateCreated;
-		firstRow.appendChild(dateCreatedElement);
-
 		var locationElement = document.createElement('span');
 		locationElement.className = "location";
-		locationElement.innerHTML = location;
+		locationElement.innerHTML = "Location: " + location;
 		firstRow.appendChild(locationElement);
 
 		var secondRow = document.createElement('div');
 		secondRow.className = "secondRow";
 		contentElement.appendChild(secondRow);
 
-		var isHardGoalElement = document.createElement('span');
-		isHardGoalElement.className = "isHardGoal";
-		isHardGoalElement.innerHTML = isHardGoal;
-		secondRow.appendChild(isHardGoalElement);
-
 		var urgencyElement = document.createElement('span');
 		urgencyElement.className = "urgency"
-		urgencyElement.innerHTML = urgency;
+		urgencyElement.innerHTML = "Urgency: " + urgency;
 		secondRow.appendChild(urgencyElement);
 
-		var descriptionElement = document.createElement('div');
-		descriptionElement.className = "description";
-		descriptionElement.innerHTML = description;
-		contentElement.appendChild(descriptionElement);
+		var difficultyElement = document.createElement('span');
+		difficultyElement.className = "difficulty"
+		difficultyElement.innerHTML = "Difficulty: " + difficulty;
+		secondRow.appendChild(difficultyElement);
 
 	}
 }
