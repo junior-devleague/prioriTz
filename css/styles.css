@@ -16,12 +16,18 @@ a {
     border-color: white;
     border-spacing: 20px;
     color: black;
-    height: 68px;
+    height: 200px;
     padding: 20px; 
+    width:300px;
+    margin:auto;
     font-size: 50px;
 }
 #home_header {
     background-color: #97D8D8;
+    font-size:40px;
+    padding-top:10px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 
@@ -53,24 +59,28 @@ li {
 }
 #home_button {
     background-color: #97D8D8;
+    width:50px;
 }
 #home_button:hover {
     background-color: #BCD8D8
 }
 #calendar_button {
     background-color: #FFABA8;
+    width:50px;
 }
 #calendar_button:hover {
     background-color: #F4BAB0
 }
 #list_button {
     background-color: #ECA8FF;
+    width:50px;
 }
 #list_button:hover {
     background-color: #E8C9F2
 }
 #quadrant_button {
     background-color: #A8BBFF;
+    width:50px;
 }
 #quadrant_button:hover {
     background-color: #BAD2F4
