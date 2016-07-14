@@ -7,8 +7,9 @@
 	text-align: center;
 	background-color: #ECA8FF;
 	height: 80px;
-	width: 600px;
-	margin-left: 385px;
+	width: 500px;
+	margin-left: 436px;
+	border-radius: 15px;
 
 }
 
@@ -22,4 +23,29 @@
 	margin-left: 385px;
 
 }
+
+.name{
+	width: 45%;
+	display:inline-block;
+}
+
+.dateDue{
+	width:45%;
+	display:inline-block;
+}
+
+.fa-chevron-circle-down{
+	text-align: right;
+	padding:13px;
+	margin-top:5px;
+	margin-left: 5px;
+}
+
+.fa-chevron-circle-up{
+	text-align: right;
+	padding:13px;
+	margin-top:5px;
+	margin-left: 5px;
+}
+
 

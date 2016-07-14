@@ -41,8 +41,14 @@ function loadItems(data){
 
 		var dateDueElement = document.createElement('span');
 		dateDueElement.className = "dateDue";
-		dateDueElement.innerHTML = dateDue;
+		var formattedDate = new Date(dateDue);
+		dateDueElement.innerHTML = formattedDate.toLocaleDateString() + ' ' + formattedDate.toLocaleTimeString();
 		nameDateElement.appendChild(dateDueElement);
+
+		var downArrowElement = document.createElement('i');
+		downArrowElement.className = "fa fa-chevron-circle-down fa-lg";
+		nameDateElement.appendChild(downArrowElement);
+
 
 		//create the content element and it's children
 
@@ -88,6 +94,15 @@ function loadItems(data){
 
 function toggleContent(evt){
 	$(evt.target).closest('.itemContainer').find('.content').toggle();
+	if($(evt.target).hasClass('fa-chevron-circle-down')){
+		$(evt.target).removeClass('fa-chevron-circle-down');
+		$(evt.target).addClass('fa-chevron-circle-up');	
+	}
+	else{
+		$(evt.target).addClass('fa-chevron-circle-down');
+		$(evt.target).removeClass('fa-chevron-circle-up');
+	}
+
 }
 
 
