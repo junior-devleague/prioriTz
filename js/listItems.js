@@ -23,7 +23,6 @@ function loadItems(data){
 
 		var container = document.createElement('div');
 		container.className = "itemContainer";
-		container.addEventListener('click', toggleContent);
 		document.getElementById('itemList').appendChild(container);
 
 		var main = document.createElement('div');
@@ -46,6 +45,7 @@ function loadItems(data){
 		nameDateElement.appendChild(dateDueElement);
 
 		var downArrowElement = document.createElement('i');
+		downArrowElement.addEventListener('click', toggleContent);
 		downArrowElement.className = "fa fa-chevron-circle-down fa-lg";
 		nameDateElement.appendChild(downArrowElement);
 
