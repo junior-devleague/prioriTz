@@ -49,6 +49,12 @@ function loadItems(data){
 		downArrowElement.className = "fa fa-chevron-circle-down fa-lg";
 		nameDateElement.appendChild(downArrowElement);
 
+		var deleteElement = document.createElement('i');
+		deleteElement.addEventListener('click', removeContent);
+		deleteElement.className = "fa fa-times-circle";
+		nameDateElement.appendChild(deleteElement);
+		
+
 
 		//create the content element and it's children
 
@@ -105,6 +111,9 @@ function toggleContent(evt){
 
 }
 
+function removeContent(evt){
+	$(evt.target).remove("fa fa-times-circle");
+}
 
 
 
