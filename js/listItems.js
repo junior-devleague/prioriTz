@@ -1,9 +1,11 @@
+var itemData = [];
+
 window.onload = function(){
-	
 	$.get({
   		url: 'http://127.0.0.1:8081/item',
   		success: function(data) {
   			loadItems(data);
+  			itemData = data;
   		},
   		dataType: "json"
 	});
@@ -53,7 +55,7 @@ function loadItems(data){
 		nameDateElement.appendChild(downArrowElement);
 
 		var deleteElement = document.createElement('i');
-		deleteElement.addEventListener('click', removeContent);
+		deleteElement.addEventListener('click', deleteItem);
 		deleteElement.className = "fa fa-times-circle";
 		nameDateElement.appendChild(deleteElement);
 		
@@ -109,8 +111,20 @@ function toggleContent(evt){
 
 }
 
-function removeContent(evt){
-	$(evt.target).remove("fa fa-times-circle");
+function deleteItem(evt){
+	// Get the index
+	var parent = $(evt.target).closest('.itemContainer');
+	var index = $('.itemContainer').index(parent);
+	var id = itemData[index]._id;
+
+	$.ajax({
+  		url: 'http://127.0.0.1:8081/item/' + id,
+  		type: 'DELETE',
+  		success: function() {
+  			itemData.splice(index, 1);
+  			parent.remove();
+  		}
+	});
 }
 
 
