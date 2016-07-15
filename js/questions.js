@@ -21,7 +21,7 @@ $(document).ready(function() {
 		// Only send the post request if all data is present
 		if (valid) {
 			$.post({
-  				url: 'http://127.0.0.1:8081/item',
+  				url: 'http://devleague.com:8081/item',
   				data: JSON.stringify(item),
   				success: onSuccess,
     			contentType: "application/json",

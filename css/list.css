@@ -15,6 +15,11 @@
     border-color: white;
     border-spacing: 20px;
 }
+
+.hardGoal {
+	background-color: #CCC;
+}
+
 .name {
 	width: 45%;
 	display: inline-block;
