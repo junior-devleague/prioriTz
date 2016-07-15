@@ -16,15 +16,14 @@
  height : 113px;
  text-indent : -9999px; 
 }
-#div.form
-{
-    display: block;
-    text-align: center;
+#name{
+	margin-left: 630px;
 }
-#form
-{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+#isHardGoal{
+	width:150px;
+	font-size: 15px;
+	text-align: center;
+}
+label{
+	text-align: center;
 }
