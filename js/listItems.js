@@ -2,7 +2,7 @@ var itemData = [];
 
 window.onload = function(){
 	$.get({
-  		url: 'http://127.0.0.1:8081/item',
+  		url: 'http://devleague.com:8081/item',
   		success: function(data) {
   			loadItems(data);
   			itemData = data;
@@ -55,10 +55,11 @@ function loadItems(data){
 				}
 			}
 		}
-/*
+
 		// If there's a tie in urgency, sort by easiest difficulty first
-		var tempItemDifficulty;
-		var currentUrgency = softGoals[0].urgency;
+		/*var tempItemDifficulty;
+		var currentUrgency;
+		console.log("Teasdfjaisdfst");
 		for (var x = 0; x < softGoals.length; x++) {
 			// Skip if already sorted
 			if (currentUrgency === softGoals[x].urgency) {
@@ -66,8 +67,8 @@ function loadItems(data){
 			}
 
 			currentUrgency = softGoals[x].urgency;
-			for (var i = 1; i < softGoals.length && (i + 1 === softGoals.length || softGoals[i + 1].urgency === currentUrgency); i++) {
-				for (var j = i; j > 0 && (j - 1 === 0 || softGoals[j - 1].urgency === currentUrgency); j--) {
+			for (var i = 1; i + 1 === softGoals.length || softGoals[i + 1].urgency === currentUrgency; i++) {
+				for (var j = i; j - 1 === 0 || softGoals[j - 1].urgency === currentUrgency; j--) {
 					var currDiff = softGoals[j].difficulty;
 					var nextDiff = softGoals[j - 1].difficulty;
 					if (currUrg > nextUrg) {
@@ -188,7 +189,7 @@ function deleteItem(evt){
 	var id = itemData[index]._id;
 
 	$.ajax({
-  		url: 'http://127.0.0.1:8081/item/' + id,
+  		url: 'http://devleague.com:8081/item/' + id,
   		type: 'DELETE',
   		success: function() {
   			itemData.splice(index, 1);

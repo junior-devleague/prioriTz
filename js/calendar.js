@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 function loadItems() {
 	$.get({
-  		url: 'http://127.0.0.1:8081/item',
+  		url: 'http://devleague.com:8081/item',
   		success: createEvents,
   		dataType: "json"
 	});
