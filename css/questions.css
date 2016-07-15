@@ -17,12 +17,28 @@
  text-indent : -9999px; 
 }
 #name{
-	margin-left: 630px;
+	margin-left: 130px;
+}
+label{
+	text-align: center;
+}
+#description{
+	margin-left:130px;
+}
+#location{
+	margin-left:130px;
+}
+#dateDue{
+	margin-left:100px;
+}
+.center{
+	text-align: center;
 }
 #isHardGoal{
 	width:150px;
 	font-size: 15px;
 	text-align: center;
+	margin-left: 130px;
 }
 label{
 	text-align: center;
@@ -39,8 +55,19 @@ label{
     box-shadow: 0 5px #666;
     position: relative;
     right:50px;
-    left:780px;
+    left:250px;
 }
 #submit_button:hover {
     background-color: #BAD2F4;
+}
+#box_border{
+	font-family:"Papyrus";
+	background-color: #A8BBFF;
+    width:400px;
+    border-style:solid;
+    border-radius: 15px;  
+    border-color: black;
+    padding:8px;
+    border-spacing: 20px;
+    margin-left:200px;
 }

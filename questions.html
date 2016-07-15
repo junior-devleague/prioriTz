@@ -19,53 +19,53 @@
 		<li><a href="list.html" class="nav_button" id="list_button">List</a></li>
 		<li><a href="calender.html" class="nav_button" id="calendar_button">Calendar</a></li>
 	</ul>
-
-	<form>
-		<div>
-    	    <center><label for="name">Name:</label></center>
-    	    <input type="text" id="name" name="name" required />
-    	</div>
-    	<div>
-    	    <center><label for="description">Description:<br></label></center>
-    	    <textarea id="description" name="description" required></textarea>
-    	</div>
-    	<div>
-    	    <center><label for="location">Location:<br></label></center>
-    	    <input type="text" id="location" name="location" required />
-    	</div>
-    	<div>
-    	    <center><label for="dateDue">Date due:<br></label></center>
-    	    <input type="datetime-local" id="dateDue" name="dateDue" required></textarea>
-    	</div>
-    	<div>
-    	    <center><label for="urgency">Urgency:</label></center>
-    		<select id="urgency" name="urgency" required>
-        		<option value="1">1</option>
-        		<option value="2">2</option>
-        		<option value="3">3</option>
-        		<option value="4">4</option>
-        		<option value="5">5</option>
-        	</select>
-    	</div>
-    	<div>
-    	    <center><label for="difficulty">Difficulty:</label></center>
-    		<select id="difficulty" name="difficulty" required>
-        		<option value="1">1</option>
-        		<option value="2">2</option>
-        		<option value="3">3</option>
-        		<option value="4">4</option>
-        		<option value="5">5</option>
-        	</select>
-    	</div>
-    	<div>
-    	    <center><label for="isHardGoal">Is this a hard goal (something you have to do)?<br></label></center>
-    		<select id="isHardGoal" name="isHardGoal" required> 
-        		<option value="true">yes</option>
-                <option value="false">no</option>
-        	</select>
-    	</div>
-
-    	<button id="submit_button" type="button">Add this new item</button>
-    </form>
+    <div id= "box_border">
+    	<form>
+    		<div>
+        	    <center><label for="name">Name:</label></center>
+        	    <input type="text" id="name" name="name" required />
+        	</div>
+        	<div>
+        	    <center><label for="description">Description:<br></label></center>
+        	    <textarea id="description" name="description" required></textarea>
+        	</div>
+        	<div>
+        	    <center><label for="location">Location:<br></label></center>
+        	    <input type="text" id="location" name="location" required />
+        	</div>
+        	<div>
+        	    <center><label for="dateDue">Date due:<br></label></center>
+        	    <input type="datetime-local" id="dateDue" name="dateDue" required></textarea>
+        	</div>
+        	<div class="center">
+        	    <span><label for="urgency">Urgency:</label></span>
+        		<select id="urgency" name="urgency" required>
+            		<option value="1">1</option>
+            		<option value="2">2</option>
+            		<option value="3">3</option>
+            		<option value="4">4</option>
+            		<option value="5">5</option>
+            	</select>
+        	</div>
+        	<div class="center">
+        	    <span><label for="difficulty">Difficulty:</label></span>
+        		<select id="difficulty" name="difficulty" required>
+            		<option value="1">1</option>
+            		<option value="2">2</option>
+            		<option value="3">3</option>
+            		<option value="4">4</option>
+            		<option value="5">5</option>
+            	</select>
+        	</div>
+        	<div>
+        	    <center><label for="isHardGoal">Is this a hard goal (something you have to do)?<br></label></center>
+        		<select id="isHardGoal" name="isHardGoal" required> 
+            		<option value="true">yes</option>
+                    <option value="false">no</option>
+            	</select>
+        	</div>
+        	<button id="submit_button" type="button">Add this new item</button>
+        </form>
+    </div>
 </body>
 </html>
