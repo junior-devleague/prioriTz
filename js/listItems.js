@@ -57,28 +57,28 @@ function loadItems(data){
 		}
 
 		// If there's a tie in urgency, sort by easiest difficulty first
-		/*var tempItemDifficulty;
+		var tempItemDifficulty;
 		var currentUrgency;
-		console.log("Teasdfjaisdfst");
-		for (var x = 0; x < softGoals.length; x++) {
+		for (var x = 0; x < softGoals.length - 1; x++) {
 			// Skip if already sorted
 			if (currentUrgency === softGoals[x].urgency) {
 				continue;
 			}
 
 			currentUrgency = softGoals[x].urgency;
-			for (var i = 1; i + 1 === softGoals.length || softGoals[i + 1].urgency === currentUrgency; i++) {
-				for (var j = i; j - 1 === 0 || softGoals[j - 1].urgency === currentUrgency; j--) {
+			for (var i = x + 1; i < softGoals.length && softGoals[i].urgency === currentUrgency; i++) {
+				for (var j = i; j > 0 && softGoals[j].urgency === currentUrgency; j--) {
 					var currDiff = softGoals[j].difficulty;
 					var nextDiff = softGoals[j - 1].difficulty;
-					if (currUrg > nextUrg) {
+					if (currDiff < nextDiff) {
 						tempItemDifficulty = softGoals[j];
 						softGoals[j] = softGoals[j - 1];
 						softGoals[j - 1] = tempItemDifficulty;
+						console.log("Swapped");
 					}
 				}
 			}
-		}*/
+		}
 	}
 
 	var combined = hardGoals.concat(softGoals);
