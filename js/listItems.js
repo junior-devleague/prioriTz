@@ -74,7 +74,6 @@ function loadItems(data){
 						tempItemDifficulty = softGoals[j];
 						softGoals[j] = softGoals[j - 1];
 						softGoals[j - 1] = tempItemDifficulty;
-						console.log("Swapped");
 					}
 				}
 			}
@@ -100,10 +99,6 @@ function loadItems(data){
 			container.className = "itemContainer";
 		}
 		document.getElementById('itemList').appendChild(container);
-
-		var main = document.createElement('div');
-		main.className = "main";
-		container.appendChild(main);
 
 		var nameDateElement = document.createElement('div');
 		nameDateElement.className= "nameDate";

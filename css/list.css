@@ -43,13 +43,9 @@
 
 .fa-chevron-circle-up {
 	text-align: right;
-	padding:13px;
-	margin-top:5px;
+	padding: 13px;
+	margin-top: 5px;
 	margin-left: 5px;
-	border-style: double;
-    border-radius: 15px;  
-    border-color: white;
-    border-spacing: 20px;
 }
 
 .content {
