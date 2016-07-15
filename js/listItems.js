@@ -41,6 +41,45 @@ function loadItems(data){
 		}
 	}
 
+	if (softGoals.length > 1) {
+		// Sort soft goals by urgency
+		var tempItemUrgency;
+		for (var i = 1; i < softGoals.length; i++) {
+			for (var j = i; j > 0; j--) {
+				var currUrg = softGoals[j].urgency;
+				var nextUrg = softGoals[j - 1].urgency;
+				if (currUrg > nextUrg) {
+					tempItemUrgency = softGoals[j];
+					softGoals[j] = softGoals[j - 1];
+					softGoals[j - 1] = tempItemUrgency;
+				}
+			}
+		}
+/*
+		// If there's a tie in urgency, sort by easiest difficulty first
+		var tempItemDifficulty;
+		var currentUrgency = softGoals[0].urgency;
+		for (var x = 0; x < softGoals.length; x++) {
+			// Skip if already sorted
+			if (currentUrgency === softGoals[x].urgency) {
+				continue;
+			}
+
+			currentUrgency = softGoals[x].urgency;
+			for (var i = 1; i < softGoals.length && (i + 1 === softGoals.length || softGoals[i + 1].urgency === currentUrgency); i++) {
+				for (var j = i; j > 0 && (j - 1 === 0 || softGoals[j - 1].urgency === currentUrgency); j--) {
+					var currDiff = softGoals[j].difficulty;
+					var nextDiff = softGoals[j - 1].difficulty;
+					if (currUrg > nextUrg) {
+						tempItemDifficulty = softGoals[j];
+						softGoals[j] = softGoals[j - 1];
+						softGoals[j - 1] = tempItemDifficulty;
+					}
+				}
+			}
+		}*/
+	}
+
 	var combined = hardGoals.concat(softGoals);
 
 	for(var i = 0; i < combined.length; i++){
