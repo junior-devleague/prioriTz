@@ -34,6 +34,7 @@ label{
     border-style: double;
     border-radius: 15px;  
     border-color: white;
+    padding:8px;
     border-spacing: 20px;
     box-shadow: 0 5px #666;
     position: relative;
