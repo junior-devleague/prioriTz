@@ -12,14 +12,45 @@ window.onload = function(){
 };
 
 function loadItems(data){
-	for(var i = 0; i < data.length; i++){
-		var dateDue = data[i].dateDue;
-		var description = data[i].description;
+	var hardGoals = [];
+	var softGoals = [];
+
+	// Split between hard and soft goals
+	for (var i = 0; i < data.length; i++) {
 		var isHardGoal = data[i].isHardGoal;
-		var location = data[i].location;
-		var name = data[i].name;
-		var urgency = data[i].urgency;
-		var difficulty = data[i].difficulty;
+		if (isHardGoal === true) {
+			hardGoals.push(data[i]);
+		} else {
+			softGoals.push(data[i]);
+		}
+	}
+
+	// Sort hard goals by date due
+	if (hardGoals.length > 1) {
+		var temp;
+		for (var i = 1; i < hardGoals.length; i++) {
+			for (var j = i; j > 0; j--) {
+				var currDate = new Date(hardGoals[j].dateDue);
+				var nextDate = new Date(hardGoals[j - 1].dateDue);
+				if (currDate < nextDate) {
+					temp = hardGoals[j];
+					hardGoals[j] = hardGoals[j - 1];
+					hardGoals[j - 1] = temp;
+				}
+			}
+		}
+	}
+
+	var combined = hardGoals.concat(softGoals);
+
+	for(var i = 0; i < combined.length; i++){
+		var dateDue = combined[i].dateDue;
+		var description = combined[i].description;
+		var isHardGoal = combined[i].isHardGoal;
+		var location = combined[i].location;
+		var name = combined[i].name;
+		var urgency = combined[i].urgency;
+		var difficulty = combined[i].difficulty;
 
 		var container = document.createElement('div');
 		// Have a different background color for hard goals
