@@ -17,13 +17,29 @@
  text-indent : -9999px; 
 }
 #name{
-	margin-left: 630px;
+	margin-left:610px;
+}
+label{
+	text-align: center;
+}
+#description{
+	margin-left:610px;
+}
+#location{
+	margin-left:610px;
+}
+#dateDue{
+	margin-left:575px;
+}
+#urgency{
+	margin-left:720px;
+}
+#difficulty{
+	margin-left:720px;
 }
 #isHardGoal{
 	width:150px;
 	font-size: 15px;
 	text-align: center;
-}
-label{
-	text-align: center;
+	margin-left: 610px;
 }
