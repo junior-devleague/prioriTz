@@ -43,3 +43,23 @@ label{
 	text-align: center;
 	margin-left: 610px;
 }
+label{
+	text-align: center;
+}
+#submit_button{
+	font-family:"Papyrus";
+	background-color: #A8BBFF;
+    width:125px;
+    border-style: double;
+    border-radius: 15px;  
+    border-color: white;
+    padding:8px;
+    border-spacing: 20px;
+    box-shadow: 0 5px #666;
+    position: relative;
+    right:50px;
+    left:780px;
+}
+#submit_button:hover {
+    background-color: #BAD2F4;
+}
