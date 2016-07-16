@@ -16,34 +16,10 @@
  height : 113px;
  text-indent : -9999px; 
 }
-#name{
-	margin-left: 130px;
+form > div {
+    text-align: center;
 }
-label{
-	text-align: center;
-}
-#description{
-	margin-left:130px;
-}
-#location{
-	margin-left:130px;
-}
-#dateDue{
-	margin-left:100px;
-}
-.center{
-	text-align: center;
-}
-#isHardGoal{
-	width:150px;
-	font-size: 15px;
-	text-align: center;
-	margin-left: 130px;
-}
-label{
-	text-align: center;
-}
-#submit_button{
+#submit_button {
 	font-family:"Papyrus";
 	background-color: #A8BBFF;
     width:125px;
@@ -60,7 +36,7 @@ label{
 #submit_button:hover {
     background-color: #BAD2F4;
 }
-#box_border{
+#box_border {
 	font-family:"Papyrus";
 	background-color: #A8BBFF;
     width:400px;

@@ -29,6 +29,13 @@ a {
     padding-bottom: 50px;
     text-align: center;
 }
+.header img {
+    width: 200px;
+    height: 200px;
+}
+#home_header img {
+    margin-top: -20px;
+}
 
 
 ul {
